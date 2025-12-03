@@ -1,383 +1,694 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajinkya Shinde - Web Developer</title>
-    <meta name="description" content="Personal portfolio of Ajinkya Shinde, a passionate web developer and computer technology student.">
-    <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="Src/Logo.jpg">
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Ajinkya Shinde | Web Developer & Computer Technology Student</title>
+
+  <!-- SEO -->
+  <meta
+    name="description"
+    content="Portfolio of Ajinkya Shinde, a web developer and computer technology student. Explore projects, skills, GitHub stats, and contact information."
+  />
+  <meta
+    name="keywords"
+    content="Ajinkya Shinde, web developer, portfolio, front-end developer, JavaScript, HTML, CSS, computer technology student, Pune"
+  />
+  <meta name="author" content="Ajinkya Shinde" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ajinkya Shinde | Web Developer" />
+  <meta
+    property="og:description"
+    content="Web Developer & Computer Technology Student — view my projects, skills, and GitHub activity."
+  />
+  <meta
+    property="og:url"
+    content="https://ajinkyashinde818.github.io/Portfolio/"
+  />
+  <meta
+    property="og:image"
+    content="https://ajinkyashinde818.github.io/Portfolio/src/ajinkya.jpg"
+  />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="icon" type="image/png" href="src/Logo.jpg" />
 </head>
 <body>
-    <div class="container">
-        <!-- Navigation -->
-        <nav>
-            <div class="logo">AJINKYA SHINDE</div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#stats">Stats</a>
-                <a href="#contact">Contact</a>
+  <a href="#about" class="skip-link">Skip to main content</a>
+
+  <div class="container">
+    <!-- Navigation -->
+    <nav>
+      <div class="logo" aria-label="Ajinkya Shinde logo">AJINKYA SHINDE</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#stats">Stats</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button
+        class="menu-toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Hero / About Section -->
+    <main id="about" class="hero-section" aria-label="About Ajinkya">
+      <div class="hero-content">
+        <span class="pill">Open to Opportunities</span>
+        <h1>
+          Hi, I'm <span class="gradient-text">Ajinkya Shinde</span>
+        </h1>
+        <h2>Web Developer &amp; Computer Technology Student</h2>
+        <p>
+          I'm a passionate web developer and a diploma student in Computer
+          Technology. I enjoy building clean, responsive, and user-friendly
+          web applications.
+        </p>
+        <p>
+          I’m also a <strong>1st-level hackathon winner</strong> and love
+          solving problems, learning new technologies, and turning ideas into
+          working projects.
+        </p>
+        <div class="hero-buttons">
+          <a
+            href="src/Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            Contact Me <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="hero-meta">
+          <span><i class="fas fa-location-dot"></i> Pune, India</span>
+          <span><i class="fas fa-code"></i> Web Development • Frontend</span>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="profile-image">
+          <img
+            src="src/ajinkya.jpg"
+            alt="Portrait of Ajinkya Shinde"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </main>
+
+    <!-- Tech Stack Section -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <h2 id="skills-heading" class="section-title">
+        <span class="gradient-text">Tech Stack</span>
+      </h2>
+
+      <p class="section-subtitle">
+        These are the technologies I use to build projects and learn new
+        concepts.
+      </p>
+
+      <div class="tabs" aria-label="Skills tabs">
+        <div class="tabs-list" role="tablist">
+          <button
+            class="tab-trigger active"
+            data-tab="languages"
+            role="tab"
+            aria-selected="true"
+          >
+            Languages
+          </button>
+          <button
+            class="tab-trigger"
+            data-tab="tools"
+            role="tab"
+            aria-selected="false"
+          >
+            Tools
+          </button>
+          <button
+            class="tab-trigger"
+            data-tab="frameworks"
+            role="tab"
+            aria-selected="false"
+          >
+            Frameworks
+          </button>
+        </div>
+
+        <div
+          class="tab-content active"
+          id="languages"
+          role="tabpanel"
+          aria-label="Programming Languages"
+        >
+          <div class="card">
+            <div class="badge-container">
+              <span class="badge bg-blue-600">C</span>
+              <span class="badge bg-blue-600">C++</span>
+              <span class="badge bg-orange-600">HTML5</span>
+              <span class="badge bg-blue-500">CSS3</span>
+              <span class="badge bg-yellow-500">JavaScript</span>
+              <span class="badge bg-orange-500">Android</span>
+              <span class="badge bg-orange-500">Java</span>
+              <span class="badge bg-blue-700">Python</span>
             </div>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
+          </div>
+        </div>
+
+        <div
+          class="tab-content"
+          id="tools"
+          role="tabpanel"
+          aria-label="Tools"
+        >
+          <div class="card">
+            <div class="badge-container">
+              <span class="badge bg-gray-700">Git &amp; GitHub</span>
+              <span class="badge bg-red-500">Figma</span>
+              <span class="badge bg-purple-600">VS Code</span>
             </div>
-        </nav>
+          </div>
+        </div>
 
-        <!-- Hero Section -->
-        <section id="about" class="hero-section">
-            <div class="hero-content">
-                <h1>Hi, I'm <span class="gradient-text">Ajinkya Shinde</span></h1>
-                <h2 >Web Developer & Computer Technology Student</h2>
-                <p>
-                    I'm a passionate web developer and a diploma student in Computer Technology. 
-                    As a fresher in the tech world, I love building creative and efficient web solutions. 
-                    I'm also a 1st-level hackathon winner, always eager to tackle challenges and innovate. 
-                    My journey is just beginning, but I'm driven to learn, grow, and contribute to the digital landscape.
-                </p>
-                <div class="hero-buttons">
-                    <a href="src/Resume.pdf" target="_blank" class="btn btn-primary">
-                        <i class="fas fa-download"></i> Download Resume
-                    </a>
-                    <a href="#contact" class="btn btn-outline">
-                        Contact Me <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+        <div
+          class="tab-content"
+          id="frameworks"
+          role="tabpanel"
+          aria-label="Frameworks"
+        >
+          <div class="card">
+            <div class="badge-container">
+              <span class="badge bg-blue-400">React</span>
             </div>
-            <div class="hero-image">
-                <div class="profile-image">
-                    <img src="src/ajinkya.jpg" alt="Ajinkya Shinde">
-                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" class="section-title">
+        <span class="gradient-text">Projects</span>
+      </h2>
+
+      <p class="section-subtitle">
+        A few of the projects I’ve built to practice and improve my skills.
+      </p>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-image">
+            <img
+              src="src/Analyze.png"
+              alt="Screenshot of AI Code Authenticator app"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-header">
+            <h3>AI Code Authenticator</h3>
+          </div>
+          <div class="project-content">
+            <p>
+              An intelligent web application that uses AI to authenticate and verify code snippets. Built using modern web technologies, this project demonstrates my ability to integrate AI APIs, handle complex logic, and create practical solutions for real-world problems.
+            </p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">AI Integration</span>
             </div>
-        </section>
+          </div>
+          <div class="project-footer">
+            <a
+              href="https://github.com/ajinkyashinde818/Ai-code-Authenticator"
+              class="btn btn-sm btn-outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github"></i> Code
+            </a>
+            <a
+              href="https://ai-code-authenticator.vercel.app/"
+              class="btn btn-sm"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
+        </article>
 
-        <!-- Tech Stack Section -->
-        <section id="skills" class="section">
-            <h2 class="section-title"><span class="gradient-text">Tech Stack</span></h2>
-            
-            <div class="tabs">
-                <div class="tabs-list">
-                    <button class="tab-trigger active" data-tab="languages">Languages</button>
-                    <button class="tab-trigger" data-tab="tools">Tools</button>
-                    <button class="tab-trigger" data-tab="frameworks">Frameworks</button>
-                </div>
-                
-                <div class="tab-content active" id="languages">
-                    <div class="card">
-                        <div class="badge-container">
-                            <span class="badge bg-blue-600">C</span>
-                            <span class="badge bg-blue-600">C++</span>
-                            <span class="badge bg-orange-600">HTML5</span>
-                            <span class="badge bg-blue-500">CSS3</span>
-                            <span class="badge bg-yellow-500">JavaScript</span>
-                            <span class="badge bg-orange-500">Android</span>
-                            <span class="badge bg-orange-500">Java</span>
-                            <span class="badge bg-blue-700">Python</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="tab-content" id="tools">
-                    <div class="card">
-                        <div class="badge-container">
-                            <span class="badge bg-gray-700">GitHub</span>
-                            <span class="badge bg-red-500">Figma</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="tab-content" id="frameworks">
-                    <div class="card">
-                        <div class="badge-container">
-                            <span class="badge bg-blue-400">React</span>
-                        </div>
-                    </div>
-                </div>
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-image">
+            <img
+              src="src/translate.png"
+              alt="Screenshot of Text to Speech web app"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-header">
+            <h3>Text to Speech Web App</h3>
+          </div>
+          <div class="project-content">
+            <p>
+              A browser-based app that converts text into spoken audio using
+              the Web Speech API. Users can input text, choose voices, and
+              adjust rate and pitch. This project shows my ability to work
+              with browser APIs and create interactive UI experiences.
+            </p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Web Speech API</span>
             </div>
-        </section>
+          </div>
+          <div class="project-footer">
+            <a
+              href="https://github.com/ajinkyashinde818/Text-to-Speech"
+              class="btn btn-sm btn-outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github"></i> Code
+            </a>
+            <a
+              href="https://ajinkyashinde818.github.io/Text-to-Speech/"
+              class="btn btn-sm"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
+        </article>
 
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <h2 class="section-title"><span class="gradient-text">Projects</span></h2>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="src/calculator.png" alt="Calculator">
-                    </div>
-                    <div class="project-header">
-                        <h3>Calculator</h3>
-                    </div>
-                    <div class="project-content">
-                        <p>
-                        I developed a web-based calculator as a part of my learning journey in web development. It features a clean and responsive user interface, allowing users to perform basic arithmetic operations with ease. Built using HTML, CSS, and JavaScript, this project helped me strengthen my frontend skills and understand the logic behind interactive web applications.
-
-</p>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                        </div>
-                    </div>
-                    <div class="project-footer">
-                        <a href="https://github.com/ajinkyashinde818/Calculator" class="btn btn-sm btn-outline">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="https://ajinkyashinde818.github.io/Calculator/" class="btn btn-sm">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="src/translate.png" alt="Text to Speech">
-                    </div>
-                    <div class="project-header">
-                        <h3>Text to Speech</h3>
-                    </div>
-                    <div class="project-content">
-                        <p>"Text-to-Speech Web App
-A browser-based application that converts text into spoken audio using the Web Speech API. This interactive tool allows users to input text, select from different voices, and control speech rate/pitch. Built with HTML, CSS, and JavaScript, it demonstrates front-end web development skills and integration with browser APIs. The project is hosted on GitHub Pages for easy access and testing."</p>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                        </div>
-                    </div>
-                    <div class="project-footer">
-                        <a href="https://github.com/ajinkyashinde818/Text-to-Speech" class="btn btn-sm btn-outline">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="https://ajinkyashinde818.github.io/Text-to-Speech/" class="btn btn-sm">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="src/Image-Gen.png" alt="Image Generator">
-                    </div>
-                    <div class="project-header">
-                        <h3>Image Generator</h3>
-                    </div>
-                    <div class="project-content">
-                        <p class="faint-text">
-        Image Generator is a simple and creative web application that allows users to generate random images with just one click. Built using HTML, CSS, and JavaScript, this project demonstrates my skills in frontend development and working with external APIs or dynamic content generation. It’s a fun and interactive tool that highlights my ability to bring ideas to life through clean design and functional code.
-    </p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">TypeScript</span>
-                        </div>
-                    </div>
-                    <div class="project-footer">
-                        <a href="https://github.com/ajinkyashinde818/Image-Generator" class="btn btn-sm btn-outline">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="https://ajinkyashinde818.github.io/Image-Generator/" class="btn btn-sm">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                    </div>
-                </div>
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-image">
+            <img
+              src="src/Image-Gen.png"
+              alt="Screenshot of Image Generator app"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-header">
+            <h3>Image Generator</h3>
+          </div>
+          <div class="project-content">
+            <p>
+              A fun web application that generates random images with a single
+              click. Built using HTML, CSS, and JavaScript, it highlights my
+              skills in handling dynamic content and using APIs or data
+              sources to power visual experiences.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">TypeScript (concepts)</span>
             </div>
-        </section>
+          </div>
+          <div class="project-footer">
+            <a
+              href="https://github.com/ajinkyashinde818/Image-Generator"
+              class="btn btn-sm btn-outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github"></i> Code
+            </a>
+            <a
+              href="https://ajinkyashinde818.github.io/Image-Generator/"
+              class="btn btn-sm"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
+        </article>
+      </div>
 
-   
+      <div class="projects-footer">
+        <a
+          href="https://github.com/ajinkyashinde818?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-link"
+        >
+          View more projects on GitHub
+          <i class="fas fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </section>
 
+    <!-- GitHub Stats Section -->
+    <section id="stats" class="section" aria-labelledby="stats-heading">
+      <h2 id="stats-heading" class="section-title">
+        <span class="gradient-text">GitHub Stats</span>
+      </h2>
 
-        <!-- GitHub Stats Section -->
-        <section id="stats" class="section">
-            <h2 class="section-title"><span class="gradient-text">GitHub Stats</span></h2>
-            <div class="stats-tabs">
-                <div class="tabs-list">
-                    <button class="tab-trigger active" data-tab="stats-overview">Overview</button>
-                    <button class="tab-trigger" data-tab="stats-streak">Streak</button>
-                    <button class="tab-trigger" data-tab="stats-languages">Languages</button>
-                    <button class="tab-trigger" data-tab="stats-trophies">Trophies</button>
-                </div>
-                
-                <div class="tab-content active" id="stats-overview">
-                    <div class="card stats-card">
-                        <img src="https://github-readme-stats.vercel.app/api?username=ajinkyashinde818&show_icons=true&theme=radical" alt="Ajinkya's GitHub Stats">
-                    </div>
-                </div>
-                
-                <div class="tab-content" id="stats-streak">
-                    <div class="card stats-card">
-                        <img src="https://github-readme-streak-stats.herokuapp.com/?user=ajinkyashinde818&theme=radical" alt="GitHub Streak">
-                    </div>
-                </div>
-                
-                <div class="tab-content" id="stats-languages">
-                    <div class="card stats-card">
-                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ajinkyashinde818&theme=radical&layout=compact" alt="Top Languages">
-                    </div>
-                </div>
-                
-                <div class="tab-content" id="stats-trophies">
-                    <div class="card stats-card">
-                        <img src="https://github-profile-trophy.vercel.app/?username=ajinkyashinde818&theme=radical&no-frame=false&no-bg=true&margin-w=4" alt="GitHub Trophies">
-                    </div>
-                </div>
-            </div>
-        </section>
+      <p class="section-subtitle">
+        A quick look at my GitHub activity, streaks, and most used languages.
+      </p>
 
-        <!-- Quote Section -->
-        <section class="section quote-section">
-            <div class="card">
-                <h3>Dev Quote</h3>
-                <blockquote>
-                    "Code is like humor. When you have to explain it, it's bad."
-                    <footer>— Cory House</footer>
-                </blockquote>
-            </div>
-        </section>
+      <div class="stats-tabs">
+        <div class="tabs-list" role="tablist">
+          <button
+            class="tab-trigger active"
+            data-tab="stats-overview"
+            role="tab"
+            aria-selected="true"
+          >
+            Overview
+          </button>
+          <button
+            class="tab-trigger"
+            data-tab="stats-streak"
+            role="tab"
+            aria-selected="false"
+          >
+            Streak
+          </button>
+          <button
+            class="tab-trigger"
+            data-tab="stats-languages"
+            role="tab"
+            aria-selected="false"
+          >
+            Languages
+          </button>
+        </div>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <h2 class="section-title"><span class="gradient-text">Get In Touch</span></h2>
-            
-            <div class="contact-grid">
-                <div class="card">
-                    <div class="card-header">
-                        <h3>Contact Me</h3>
-                        <p>Fill out the form and I'll get back to you as soon as possible.</p>
-                    </div>
-                    <div class="card-content">
-                        
-                        <form id="contact-form" class="contact-form">
-  <div class="form-group">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="from_name" placeholder="Your name" required>
-  </div>
-  <div class="form-group">
-    <label for="email">Email</label>
-    <input type="email" id="email" name="from_email" placeholder="Your email" required>
-  </div>
-  <div class="form-group">
-    <label for="message">Message</label>
-    <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
-  </div>
-  <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-</form>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-header">
-                        <h3>Connect With Me</h3>
-                        <p>Reach out through social media or email.</p>
-                    </div>
-                    <div class="card-content">
-                        <div class="connect-list">
-                            <div class="connect-item">
-                                <div class="connect-icon">
-                                    <a href="mailto:ajinkyashinde818@gmail.com">
-                                        <i class="fas fa-envelope"></i>
-                                    </a>
-                                </div>
-                                <div class="connect-info">
-                                    <h4>Email</h4>
-                                    <p>ajinkyashinde818@gmail.com</p>
-                                </div>
-                            </div>
-                            
-                            <div class="connect-item">
-                                <div class="connect-icon">
-                                    <a href="https://www.linkedin.com/in/ajinkya-shinde-624489348/" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
-                                </div>
-                                <div class="connect-info">
-                                    <h4>LinkedIn</h4>
-                                    <p>linkedin.com/in/Ajinkya Shinde</p>
-                                </div>
-                            </div>
-                            
-                            <div class="connect-item">
-                                <div class="connect-icon">
-                                    <a href="https://github.com/ajinkyashinde818" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                                <div class="connect-info">
-                                    <h4>GitHub</h4>
-                                    <p>github.com/ajinkyashinde818</p>
-                                </div>
-                            </div>
-                            
-                            <div class="connect-item">
-                                <div class="connect-icon">
-                                    <a href="https://www.instagram.com/ajinkya_shinde__02/" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-                                <div class="connect-info">
-                                    <h4>Instagram</h4>
-                                    <p>instagram.com/ajinkya_shinde__02</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div
+          class="tab-content active"
+          id="stats-overview"
+          role="tabpanel"
+          aria-label="GitHub Overview Stats"
+        >
+          <div class="card stats-card">
+            <img
+              src="https://github-readme-stats.vercel.app/api?username=ajinkyashinde818&show_icons=true&theme=radical"
+              alt="GitHub stats overview for Ajinkya Shinde"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            />
+          </div>
+        </div>
 
-        <!-- Footer -->
-        <footer>
-            <div class="social-links">
-                <a href="https://github.com/ajinkyashinde818" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/ajinkya-shinde-624489348/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://www.instagram.com/ajinkya_shinde__02/" target="_blank" rel="nooener noreferrer">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                </a>
-                <a href="mailto:ajinkyashinde818@gmail.com">
+        <div
+          class="tab-content"
+          id="stats-streak"
+          role="tabpanel"
+          aria-label="GitHub Streak Stats"
+        >
+          <div class="card stats-card">
+            <img
+              src="https://streak-stats.demolab.com?user=ajinkyashinde818&theme=radical"
+              alt="GitHub contribution streak for Ajinkya Shinde"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            />
+          </div>
+        </div>
 
+        <div
+          class="tab-content"
+          id="stats-languages"
+          role="tabpanel"
+          aria-label="Top Languages"
+        >
+          <div class="card stats-card">
+            <img
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=ajinkyashinde818&theme=radical&layout=compact"
+              alt="Most used programming languages of Ajinkya Shinde"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="section quote-section" aria-label="Developer quote">
+      <div class="card">
+        <h3>Dev Quote</h3>
+        <blockquote>
+          “Code is like humor. When you have to explain it, it’s bad.”
+          <footer>— Cory House</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="section-title">
+        <span class="gradient-text">Get In Touch</span>
+      </h2>
+
+      <p class="section-subtitle">
+        Have an idea, opportunity, or question? Feel free to reach out.
+      </p>
+
+      <div class="contact-grid">
+        <div class="card">
+          <div class="card-header">
+            <h3>Contact Me</h3>
+            <p>
+              Fill out the form and I’ll respond as soon as I can. Your
+              message will be sent directly to my email.
+            </p>
+          </div>
+          <div class="card-content">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="from_name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="from_email"
+                  placeholder="Your email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Send Message
+              </button>
+              <p id="form-status" class="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>Connect With Me</h3>
+            <p>You can also find me on these platforms.</p>
+          </div>
+          <div class="card-content">
+            <div class="connect-list">
+              <div class="connect-item">
+                <div class="connect-icon">
+                  <a
+                    href="mailto:ajinkyashinde818@gmail.com"
+                    aria-label="Email Ajinkya"
+                  >
                     <i class="fas fa-envelope"></i>
-                </a>
+                  </a>
+                </div>
+                <div class="connect-info">
+                  <h4>Email</h4>
+                  <p>ajinkyashinde818@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="connect-item">
+                <div class="connect-icon">
+                  <a
+                    href="https://www.linkedin.com/in/ajinkya-shinde-624489348/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit LinkedIn profile"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </div>
+                <div class="connect-info">
+                  <h4>LinkedIn</h4>
+                  <p>/in/ajinkya-shinde-624489348</p>
+                </div>
+              </div>
+
+              <div class="connect-item">
+                <div class="connect-icon">
+                  <a
+                    href="https://github.com/ajinkyashinde818"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit GitHub profile"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+                <div class="connect-info">
+                  <h4>GitHub</h4>
+                  <p>github.com/ajinkyashinde818</p>
+                </div>
+              </div>
+
+              <div class="connect-item">
+                <div class="connect-icon">
+                  <a
+                    href="https://www.instagram.com/ajinkya_shinde__02/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit Instagram profile"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+                <div class="connect-info">
+                  <h4>Instagram</h4>
+                  <p>@ajinkya_shinde__02</p>
+                </div>
+              </div>
             </div>
-            <p>&copy; <span id="current-year"></span> Ajinkya Shinde. All rights reserved.</p>
-            
-        </footer>
-    </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  (function(){
-    emailjs.init("x2BwXio3bpf4xXCYL"); // Replace with your EmailJS Public Key
-  })();
+    <!-- Footer -->
+    <footer>
+      <div class="social-links">
+        <a
+          href="https://github.com/ajinkyashinde818"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ajinkya-shinde-624489348/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/ajinkya_shinde__02/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a
+          href="mailto:ajinkyashinde818@gmail.com"
+          aria-label="Email Ajinkya"
+        >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      <p>
+        &copy; <span id="current-year"></span> Ajinkya Shinde. All rights
+        reserved.
+      </p>
+    </footer>
+  </div>
 
-  const contactForm = document.getElementById("contact-form");
-  if (contactForm) {
-    contactForm.addEventListener("submit", function(e) {
-      e.preventDefault();
-      emailjs.sendForm('service_ey0fh0k', 'template_g405plb', this)
-        .then(function() {
-          alert('✅ Thank you for your message!');
-          contactForm.reset();
-        }, function(error) {
-          alert('❌ Oops! Something went wrong. Please try again.');
-        });
-    });
-  }
-</script>
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+      // IMPORTANT: this uses your existing EmailJS public key
+      emailjs.init("x2BwXio3bpf4xXCYL");
+    })();
 
+    const contactForm = document.getElementById("contact-form");
+    const formStatus = document.getElementById("form-status");
+
+    if (contactForm) {
+      contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        formStatus.textContent = "Sending...";
+        formStatus.classList.remove("error", "success");
+
+        emailjs
+          .sendForm("service_ey0fh0k", "template_g405plb", this)
+          .then(function () {
+            formStatus.textContent = "✅ Thank you! Your message has been sent.";
+            formStatus.classList.add("success");
+            contactForm.reset();
+          })
+          .catch(function () {
+            formStatus.textContent =
+              "❌ Something went wrong. Please try again later.";
+            formStatus.classList.add("error");
+          });
+      });
+    }
+  </script>
 </body>
 </html>
